@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+header h1{
+    font-size: 3rem;
+    color: #3399CC;
+}
+
+/* -- fix for angular ui-bootstrap to handle empty href values properly --  */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

@@ -1,0 +1,13 @@
+<main>
+	<div class="row">
+
+		<div align="center" class="col-xs-6 col-lg-6" ng-repeat="categories in categories.categories">
+			<h1>{{categories.title}}</h1>
+			<h2>
+              <a class="btn btn-default btn-large" ui-sref="category({catid: categories._id})" ui-sref-active="active" role="button">
+               <img src="{{categories.image}}" height="200" width="200">
+              </a>
+          </h2>
+		</div>
+	</div>
+</main>

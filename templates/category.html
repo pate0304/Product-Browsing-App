@@ -1,0 +1,30 @@
+<main>
+<div class="row">
+	<div class="row">
+		<a href="#/home" class="btn btn-success btn-lg">Back</a>
+	</div>
+<ui-view></ui-view>
+
+<div align="center" class="col-xs-6 col-lg-6" ng-repeat="book in books">
+			<h1>{{book.title}}</h1>
+<br><br>
+			<h2>
+                       <a class="btn btn-default btn-large" ui-sref="details({bid: book._id})" ui-sref-active="active" role="button">
+      
+                  <img src="{{book.image}}" height="200" width="200">
+              </a>
+          </h2>
+
+		</div>
+
+	
+	</div>
+	<ui-view></ui-view>
+
+
+</main>
+
+
+
+
+
