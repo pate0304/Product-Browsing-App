@@ -1,4 +1,4 @@
-var app = angular.module("movieApp", ["ui.router"])
+var app = angular.module("productBrowse", ["ui.router"])
 	.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise("/home");
 
