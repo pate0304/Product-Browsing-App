@@ -9,7 +9,6 @@ var app = angular.module("movieApp", ["ui.router"])
 				controller: "MainCtrl",
 				resolve: {
 					categoryList: function ($http) {
-						//alert("calling series.json");
 						return $http.get("data/data.json").then(
 							function (response) {
 								return response;
@@ -32,7 +31,7 @@ var app = angular.module("movieApp", ["ui.router"])
 					}
 				}
 			})
-			.state('details', {
+			.state('category.product', {
 				url: '/details/:bid',
 				templateUrl: 'templates/details.html',
 				controller: 'DetailsCtrl',
@@ -86,7 +85,7 @@ app.controller("ListCtrl", ["$scope", "$stateParams", "titleList", function ($sc
 		}
 
 	}
-//	if (cat == 0) {
+	//	if (cat == 0) {
 	//	
 	//	}
 	console.log($scope.books)
